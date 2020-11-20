@@ -8,7 +8,7 @@ import './assets/styles/reset.css'
 import './assets/styles/border.css'
 
 Vue.config.productionTip = false
-fastClick.attach(document.body)
+fastClick.attach(document.body) //  把fastClick绑定到body元素
 
 /* eslint-disable no-new */
 new Vue({
