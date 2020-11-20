@@ -1,9 +1,13 @@
 <template>
   <div class="header">
-    <div class="header-left">返</div>
-    <div class="header-input">输入城市/景点/游玩主题</div>
+    <div class="header-left">
+        <span class="iconfont iconfanhui"></span>
+    </div>
+    <div class="header-input">
+        <span class="iconfont iconsousuo"></span>
+        输入城市/景点/游玩主题</div>
     <a href="javascript:;" class="mp-linkarea">
-      <span>城市</span>
+      城市 <span class="iconfont iconjiantou"></span>
     </a>
   </div>
 </template>
@@ -15,9 +19,10 @@ export default {
 </script>
 
 <style lang="less" scoped>
+@import '~styles/variables.less';
 .header {
   display: flex;
-  background-color: #00bcd4;
+  background-color: @bgColor;
   height:.88rem;
   line-height: 0.88rem;
   color: #fff;
@@ -28,6 +33,10 @@ export default {
     width: 0.4rem;
     padding-left: 0.2rem;
     padding-right: 0.2rem;
+    .iconfanhui{
+        font-size:.25rem;
+        font-weight: bolder;
+    }
   }
   .header-input {
     height: .64rem;
@@ -37,14 +46,16 @@ export default {
     box-sizing: border-box;
     color:#ccc;
     line-height: .64rem;
+    padding-left:.2rem;
   }
   .mp-linkarea {
     color: #fff;
     float: right;
-    span {
-      line-height: 0.88rem;
-      padding-left: 0.22rem;
-      padding-right: 0.22rem;
+    line-height: 0.88rem;
+    padding-left: 0.22rem;
+    padding-right: 0.22rem;
+    .iconjiantou{
+        font-size:.2rem;
     }
   }
 }

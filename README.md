@@ -2,6 +2,8 @@
 
 > A Vue.js project
 
+1. 把woff,ttf,svg,eot这些字体文件单独放到了iconfont文件夹里，别忘记修改iconfont.css里的url路径(除了base64那个)
+2. 注意，修改了webpack的config之后一定要重启服务！
 ## Build Setup
 
 ``` bash
