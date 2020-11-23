@@ -1,6 +1,6 @@
 <template>
 <div class="wrapper">
-    <swiper :options="swiperOptions">
+  <swiper :options="swiperOptions" v-if="showSwiper">
     <swiper-slide v-for="item of swiperList" :key="item.id">
       <img class="swiper-img" :src="item.imgUrl" alt="">
     </swiper-slide>
@@ -10,25 +10,24 @@
 </template>
 
 <script>
-import img1 from '@/assets/img/1.jpg'
-import img2 from '@/assets/img/2.jpg'
 
 export default {
   name: 'HomeSwiper',
+  props: {
+    swiperList: Array
+  },
   data () {
     return {
       swiperOptions: {
         pagination: '.swiper-pagination',
         loop: true,
         autoplay: 2500
-      },
-      swiperList: [{
-        id: '0001',
-        imgUrl: img1
-      }, {
-        id: '0002',
-        imgUrl: img2
-      }]
+      }
+    }
+  },
+  computed: {
+    showSwiper () {
+      return this.swiperList.length
     }
   }
 }

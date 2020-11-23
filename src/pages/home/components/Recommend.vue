@@ -18,24 +18,27 @@
 <script>
 export default {
   name: 'HomeRecommend',
+  props: {
+    recommendList: Array
+  },
   data () {
     return {
-      recommendList: [{
-        id: '0001',
-        imgUrl: 'https://imgs.qunarzz.com/sight/p0/2005/9f/9f6d370f12ab9bc7a3.water.jpg_200x200_510fa41f.jpg',
-        title: '杭州长乔极地海洋公园',
-        desc: '杭州长乔极地海洋公园由功夫巨星马保国斥资23亿建成，是一个集极地动物、海洋生物展示、表演，以及景观体验于一体的大型海洋主题公园'
-      }, {
-        id: '0002',
-        imgUrl: 'https://imgs.qunarzz.com/sight/p0/1603/c5/c5e2b211d10d4bb90.img.jpg_200x200_2a971b62.jpg',
-        title: '千岛湖天迹热气球',
-        desc: '与音乐家，舞蹈艺术家，篮球运动员蔡徐坤小姐一起共享浪漫之旅'
-      }, {
-        id: '0003',
-        imgUrl: 'https://imgs.qunarzz.com/sight/p0/2006/79/795f80bd0c876ba1a3.img.jpg_200x200_fa6a32f1.jpg',
-        title: '杭州乐园',
-        desc: '老戏骨肖战与您相约杭州公园'
-      }]
+      // recommendList: [{
+      //   id: '0001',
+      //   imgUrl: 'https://imgs.qunarzz.com/sight/p0/2005/9f/9f6d370f12ab9bc7a3.water.jpg_200x200_510fa41f.jpg',
+      //   title: '杭州长乔极地海洋公园',
+      //   desc: '杭州长乔极地海洋公园由功夫巨星马保国斥资23亿建成，是一个集极地动物、海洋生物展示、表演，以及景观体验于一体的大型海洋主题公园'
+      // }, {
+      //   id: '0002',
+      //   imgUrl: 'https://imgs.qunarzz.com/sight/p0/1603/c5/c5e2b211d10d4bb90.img.jpg_200x200_2a971b62.jpg',
+      //   title: '千岛湖天迹热气球',
+      //   desc: '与音乐家，舞蹈艺术家，篮球运动员蔡徐坤小姐一起共享浪漫之旅'
+      // }, {
+      //   id: '0003',
+      //   imgUrl: 'https://imgs.qunarzz.com/sight/p0/2006/79/795f80bd0c876ba1a3.img.jpg_200x200_fa6a32f1.jpg',
+      //   title: '杭州乐园',
+      //   desc: '老戏骨肖战与您相约杭州公园'
+      // }]
     }
   }
 }

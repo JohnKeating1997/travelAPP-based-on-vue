@@ -5,16 +5,21 @@
     </div>
     <div class="header-input">
         <span class="iconfont iconsousuo"></span>
-        输入城市/景点/游玩主题</div>
+        输入城市/景点/游玩主题
+    </div>
     <a href="javascript:;" class="mp-linkarea">
-      城市 <span class="iconfont iconjiantou"></span>
+      {{this.city}}
+      <span class="iconfont iconjiantou"></span>
     </a>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HomeHeader'
+  name: 'HomeHeader',
+  props: {
+    city: String
+  }
 }
 </script>
 
