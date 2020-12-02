@@ -7,10 +7,12 @@
         <span class="iconfont iconsousuo"></span>
         输入城市/景点/游玩主题
     </div>
-    <a href="javascript:;" class="mp-linkarea">
-      {{this.city}}
-      <span class="iconfont iconjiantou"></span>
-    </a>
+    <router-link to="/city">
+      <div href="javascript:;" class="mp-linkarea">
+        {{this.city}}
+        <span class="iconfont iconjiantou"></span>
+      </div>
+    </router-link>
   </div>
 </template>
 
