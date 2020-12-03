@@ -30,8 +30,8 @@ export default {
 .header {
   display: flex;
   background-color: @bgColor;
-  height:.88rem;
-  line-height: 0.88rem;
+  height: @headerHeight;
+  line-height: @headerHeight;
   color: #fff;
 //   text-align: center;
   align-items: center;
