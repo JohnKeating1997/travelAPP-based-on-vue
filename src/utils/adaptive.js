@@ -1,5 +1,5 @@
 const designWidth = 375
-const designFontSize = 16
+const designFontSize = 50
 
 export function getFontSize () {
   const { clientWidth } = document.documentElement
